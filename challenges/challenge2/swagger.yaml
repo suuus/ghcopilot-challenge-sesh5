@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  title: Book Management API
+  version: 1.0.0
+  description: TODO - Add API description
+
+servers:
+  - url: http://localhost:3000
+    description: Development server
+
+paths:
+  /books:
+    get:
+      summary: TODO
+    post:
+      summary: TODO
+
+  /books/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: TODO
+    put:
+      summary: TODO
+    delete:
+      summary: TODO
+
+  /books/{id}/checkout:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    post:
+      summary: TODO
+
+  /books/{id}/return:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    post:
+      summary: TODO
+
+components:
+  schemas:
+    Book:
+      type: object
+      properties:
+        # TODO: Define book properties
+      required:
+        # TODO: List required properties

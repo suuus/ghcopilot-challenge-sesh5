@@ -1,0 +1,26 @@
+{
+  "name": "copilot-documentation-challenges",
+  "version": "1.0.0",
+  "description": "Documentation challenges using GitHub Copilot",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:challenge1": "jest challenges/challenge1",
+    "test:challenge2": "jest challenges/challenge2",
+    "validate-swagger": "swagger-cli validate challenges/challenge2/swagger.yaml",
+    "validate-docs": "node scripts/validate-docs.js"
+  },
+  "keywords": [
+    "documentation",
+    "github-copilot",
+    "challenges"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "js-yaml": "^4.1.0",
+    "supertest": "^6.3.3",
+    "swagger-cli": "^4.0.4"
+  }
+}

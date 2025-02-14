@@ -1,0 +1,28 @@
+components:
+  apiGateway:
+    port: 3000
+    ssl: true
+    rateLimit: 100
+    
+  databases:
+    mongodb:
+      host: localhost
+      port: 27017
+    postgres:
+      host: localhost
+      port: 5432
+      
+  services:
+    # TODO: Configure service endpoints, ports, and dependencies
+    # Add configuration for:
+    # - Product Service
+    # - Order Service
+    # - User Service
+    # - Payment Service
+    # - Notification Service
+
+  cache:
+    # TODO: Configure Redis settings
+    
+  messageQueue:
+    # TODO: Configure RabbitMQ settings
