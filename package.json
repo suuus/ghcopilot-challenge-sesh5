@@ -8,7 +8,10 @@
     "test:challenge1": "jest challenges/challenge1",
     "test:challenge2": "jest challenges/challenge2",
     "validate-swagger": "swagger-cli validate challenges/challenge2/swagger.yaml",
-    "validate-docs": "node scripts/validate-docs.js"
+    "validate-docs": "node scripts/validate-docs.js",
+    "present": "marp --html slides.md",
+    "present:watch": "marp --html --watch slides.md",
+    "export:pptx": "marp --pptx slides.md"
   },
   "keywords": [
     "documentation",
@@ -18,6 +21,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0",
     "jest": "^29.7.0",
     "js-yaml": "^4.1.0",
     "supertest": "^6.3.3",
